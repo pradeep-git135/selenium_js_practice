@@ -1,0 +1,55 @@
+{
+  "uid" : "da1e477e00fe05b0",
+  "name" : "navigating to any application",
+  "fullName" : "launching browser.navigating to any application",
+  "historyId" : "d95360fe8e4e740b1dcf717389d7ee22",
+  "time" : {
+    "start" : 1613477054175,
+    "stop" : 1613477057182,
+    "duration" : 3007
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "launching browser"
+  }, {
+    "name" : "testClass",
+    "value" : "launching browser"
+  }, {
+    "name" : "testMethod",
+    "value" : "navigating to any application"
+  }, {
+    "name" : "package",
+    "value" : "launching browser"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-88.0.4324.150"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "da1e477e00fe05b0.json",
+  "parameterValues" : [ "chrome-88.0.4324.150" ]
+}

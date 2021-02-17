@@ -1,0 +1,15 @@
+		Data Driven Testing:[data should be derived from an external resource by using 3rd part tool and run the testscripts is called ]
+
+# you should not hardcode the url in the test scripts because running the test scripts in diffenent environment is difficult
+# you should not hardcoded the browser name in the test scripts, since selenium supports multiple  platforms and browsers it is difficut
+	execute the same test scripots in different os and browsers
+
+#2 types of data 1)common data [common for each and every testscripts e.g. browser, url, username, password... (usely stored in property file, jsonfile, or dirctly derived from command line ) ]
+		 2)testscript data[specific to each test scripts (usely derived from xlsheet, database..)
+
+we should not hardcode common data and testscript data in testscripts
+
+#advantages of implimenting datadriven testing
+1]modification of test data is easy
+2]maintainence os testdata id easy
+3]running the test scripts in different environments is easy

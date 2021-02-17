@@ -1,0 +1,11 @@
+[ {
+  "uid" : "f6b3c04141a5b2a3",
+  "name" : "navigating to any application",
+  "time" : {
+    "start" : 1613483746409,
+    "stop" : 1613483749825,
+    "duration" : 3416
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,21 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "launching browser",
+    "children" : [ {
+      "name" : "navigating to any application",
+      "uid" : "f6b3c04141a5b2a3",
+      "parentUid" : "03e8efd6fefb287291176dfcb7db579c",
+      "status" : "failed",
+      "time" : {
+        "start" : 1613483746409,
+        "stop" : 1613483749825,
+        "duration" : 3416
+      },
+      "flaky" : true,
+      "parameters" : [ "chrome-88.0.4324.150" ]
+    } ],
+    "uid" : "03e8efd6fefb287291176dfcb7db579c"
+  } ]
+}

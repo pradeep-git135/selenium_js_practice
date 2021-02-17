@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1613483746408' stop='1613483749827'>
+    <name>launching browser</name>
+    <title>launching browser</title>
+    <test-cases>
+        <test-case start='1613483746409' status='failed' stop='1613483749825'>
+            <name>navigating to any application</name>
+            <title>navigating to any application</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-88.0.4324.150'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 'Assert - Chai' to equal 'Assert - Chai###'</message>
+                <stack-trace>AssertionError: expected 'Assert - Chai' to equal 'Assert - Chai###'
+                    at Context.&lt;anonymous> (E:\selenium_js_practice\v_tiger\demo.js:45:16)
+                    at Context.executeSync (E:\selenium_js_practice\v_tiger\node_modules\@wdio\sync\build\index.js:38:22)
+                    at E:\selenium_js_practice\v_tiger\node_modules\@wdio\sync\build\index.js:69:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

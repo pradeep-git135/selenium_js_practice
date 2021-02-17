@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "launching browser",
+    "children" : [ {
+      "name" : "navigating to any application",
+      "uid" : "f6b3c04141a5b2a3",
+      "parentUid" : "c2a0b26976225b9cd424792ad4938de2",
+      "status" : "failed",
+      "time" : {
+        "start" : 1613483746409,
+        "stop" : 1613483749825,
+        "duration" : 3416
+      },
+      "flaky" : true,
+      "parameters" : [ "chrome-88.0.4324.150" ]
+    } ],
+    "uid" : "c2a0b26976225b9cd424792ad4938de2"
+  } ]
+}

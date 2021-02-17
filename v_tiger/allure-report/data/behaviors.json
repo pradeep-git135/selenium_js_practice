@@ -1,0 +1,17 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "navigating to any application",
+    "uid" : "f6b3c04141a5b2a3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1613483746409,
+      "stop" : 1613483749825,
+      "duration" : 3416
+    },
+    "flaky" : true,
+    "parameters" : [ "chrome-88.0.4324.150" ]
+  } ]
+}

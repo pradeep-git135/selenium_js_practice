@@ -1,0 +1,80 @@
+{
+  "uid" : "f6b3c04141a5b2a3",
+  "name" : "navigating to any application",
+  "fullName" : "launching browser.navigating to any application",
+  "historyId" : "d95360fe8e4e740b1dcf717389d7ee22",
+  "time" : {
+    "start" : 1613483746409,
+    "stop" : 1613483749825,
+    "duration" : 3416
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'Assert - Chai' to equal 'Assert - Chai###'",
+  "statusTrace" : "AssertionError: expected 'Assert - Chai' to equal 'Assert - Chai###'\n                    at Context.<anonymous> (E:\\selenium_js_practice\\v_tiger\\demo.js:45:16)\n                    at Context.executeSync (E:\\selenium_js_practice\\v_tiger\\node_modules\\@wdio\\sync\\build\\index.js:38:22)\n                    at E:\\selenium_js_practice\\v_tiger\\node_modules\\@wdio\\sync\\build\\index.js:69:68",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "launching browser"
+  }, {
+    "name" : "testClass",
+    "value" : "launching browser"
+  }, {
+    "name" : "testMethod",
+    "value" : "navigating to any application"
+  }, {
+    "name" : "package",
+    "value" : "launching browser"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-88.0.4324.150"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "347605e8dd9995e9",
+      "status" : "failed",
+      "statusDetails" : "expected 'Assert - Chai' to equal 'Assert - Chai###'",
+      "time" : {
+        "start" : 1613483041617,
+        "stop" : 1613483045614,
+        "duration" : 3997
+      }
+    }, {
+      "uid" : "da1e477e00fe05b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1613477054175,
+        "stop" : 1613477057182,
+        "duration" : 3007
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f6b3c04141a5b2a3.json",
+  "parameterValues" : [ "chrome-88.0.4324.150" ]
+}

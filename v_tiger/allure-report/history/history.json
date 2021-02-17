@@ -1,0 +1,22 @@
+{
+  "d95360fe8e4e740b1dcf717389d7ee22" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f6b3c04141a5b2a3",
+      "status" : "failed",
+      "statusDetails" : "expected 'Assert - Chai' to equal 'Assert - Chai###'",
+      "time" : {
+        "start" : 1613483746409,
+        "stop" : 1613483749825,
+        "duration" : 3416
+      }
+    } ]
+  }
+}

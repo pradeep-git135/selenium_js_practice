@@ -1,0 +1,28 @@
+{
+  "name": "v_tiger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^7.0.3",
+    "allure-commandline": "^2.13.8",
+    "chai": "^4.3.0",
+    "source-map-support": "^0.5.19",
+    "webdriverio": "^7.0.3"
+  },
+  "devDependencies": {
+    "@rpii/wdio-html-reporter": "^6.3.2",
+    "@wdio/allure-reporter": "^7.0.4",
+    "@wdio/local-runner": "^7.0.3",
+    "@wdio/mocha-framework": "^7.0.3",
+    "@wdio/selenium-standalone-service": "^7.0.3",
+    "@wdio/spec-reporter": "^7.0.3",
+    "@wdio/sync": "^7.0.3"
+  }
+}

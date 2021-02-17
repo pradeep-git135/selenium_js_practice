@@ -1,0 +1,132 @@
+				DATABASE_CONNECTIVITY BY USIMG JAVASCRIPT
+		
+1]you should have install node.js
+
+2]you should have install mysql  (link: https://links.apksource.net/vcj)
+
+3]To access a MySQL database with Node.js, you need a MySQL driver to download and install use command
+		npm install mysql
+
+4]create connection with DB (create a .js file and use below code)
+
+var mysql = require("mysql")
+
+var con = mysql.createConnection({
+
+		host:"localhost"
+		user:"your username"
+		password:"your password"
+
+	  })
+con.connect(function(err){
+
+		if(err){
+		  throw err
+		}
+
+		else{
+		  console.log("connected successfully")
+		}
+		con.query(sql, function(err, result, fields){
+			console.log(result)
+			console.log(fields)
+		})
+
+	    })
+5]The connection object created in the example above, has a method for querying the database:
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+  var sql = "your query"
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("Result: " + result);
+  });
+});
+
+
+eg for queries step by step:
+
+1]create database:
+var sql = "CREATE DATABASE mydb"
+
+2]create table :
+	var sql = "CREATE TABLE customers (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), address VARCHAR(255))";
+
+3]inserting a single record into table:
+	var sql = "INSERT INTO customers (name, address) VALUES ('Company Inc', 'Highway 37')";
+
+4]inserting multiple records into table simultaniusly:
+	
+	var sql = "INSERT INTO customers (name, address) VALUES ?";
+  	var values = [
+		['John', 'Highway 71'],
+    		['Peter', 'Lowstreet 4'],
+    		['Amy', 'Apple st 652'],
+    		['Hannah', 'Mountain 21'],
+    		['Michael', 'Valley 345'],
+    		['Sandy', 'Ocean blvd 2'],
+    		['Betty', 'Green Grass 1'],
+    		['Richard', 'Sky st 331'],
+    		['Susan', 'One way 98'],
+    		['Vicky', 'Yellow Garden 2'],
+   		['Ben', 'Park Lane 38'],
+    		['William', 'Central st 954'],
+    		['Chuck', 'Main Road 989'],
+    		['Viola', 'Sideway 1633']
+  	];
+
+	
+	con.connect(function(err) {
+ 		 if (err) throw err;
+  		 console.log("Connected!");
+  		 var sql = "your query"
+  		 con.query(sql,[values], function (err, result) {
+    		 		if (err) throw err;
+    				console.log("Result: " + result);
+ 		 });
+	});
+
+
+5]selecting everything from the customer table
+	var sql = "SELECT * FROM customers"
+
+6]To select only some of the columns in a table, use the "SELECT" statement followed by the column name.
+
+	var sql = "SELECT name, address FROM customers"
+
+
+con.query("SELECT name, address FROM customers", function (err, result, fields) {
+    if (err) throw err;
+    console.log(result);
+    console.log(fields);
+  });
+
+The second parameter of the callback function is an array of objects containing information about each row
+The third parameter of the callback function is an array of objects containing information about each field in the result.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+		MOCHA FRAMEWORK:
+
+# mocha is a feature rich javascript framework running on node.js and in the browser
+# it provides organized way of testing the applications
+# provides test retry support
+# provides test specific timeouts
+# reports test duration
+# highlates slow tests
+# supports any assertion library that user wants
+# mocha provides hooks before(), beforeeach(), after(), aftereach() those we can use as setup and teardown in testscripts
+
+
+#describe and it function(we can have multiple testcase(it) in a single file, multiple testsuite(describe) in a single file )
+# skip can be used along with describe and it to skip the defective test suite and script(results to pending )
+#only can be used along with describe and it to run the required suite and script(excluding test scripts)
+
+
+*mocha hooks
+
+before(callback fxn)==> exucute once before all the test case
+after(callback fxn)==> exucute once after all the test case
+
+beforeEach(callback fxn)==> exucute once before each of the test case
+afterEach(callback fxn)==> exucute once after each of the test case
+
+*retrying the failed testcases
+	this.rertries(3)
+
+*giving timout
+	this.timeout(3000)  we can use this on suite levell, testcase levell, hooklevell etc...
+
