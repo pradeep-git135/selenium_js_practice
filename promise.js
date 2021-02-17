@@ -1,13 +1,4 @@
-// // async function fxn1(){
-// //         console.log("start");
 
-// //         var res =  await setTimeout(()=>{
-// //              console.log("inside time out")
-// //         },3000)
-
-// //         console.log("end")
-// //         return res
-// // }
 // // var value = fxn1()
 // // console.log(value)
 // // value.then((resp)=>{
