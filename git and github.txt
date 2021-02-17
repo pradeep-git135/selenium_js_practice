@@ -1,3 +1,26 @@
 				git and github
 
-what is git
+what is git:git
+	 git is version control system
+
+why do we need vcs:[different vcs are git,subversion, mercurial..]
+1)if your computer crashes
+2)if 2 or more people need to contribute on same code
+3)difficult to track changes and revert back to previous versions is difficult
+
+why git is far best than other vcs:
+	1]git is distributede version control system means version histories are maintained on both local and as well as cloud
+	2]we can host our code by using github (it is a website allows you to store your code in cloud) which is powered by git
+
+git commands:
+
+#create new github repo
+#push code to this repo using git
+#git commands:
+	1)git clone url => clones the cloud_repo to your local_repo
+	2)git status => shows the changes in the repo 
+	1)git add fileName => will add the file to staging area, later staging area is used to commit files
+	2)git commit => will adds your changes to local version controll database.still not pushed to remote server
+	5)git log => will logs the commit history with commit id each
+	3)git push => will push the commited changes to remote repo
+	4)git difftool => shows the local changes and previous versions
