@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="handling alerts" timestamp="2021-02-18T11:37:43" time="8.757" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="handling alerts"/>
+      <property name="capabilities" value="chrome.88_0_4324_150.windows"/>
+      <property name="file" value=".\testScripts\alertTest.js"/>
+    </properties>
+    <testcase classname="chrome.88_0_4324_150.windows.handling alerts" name="alert prompt handling" time="8.755">
+      <system-out><![CDATA[
+COMMAND: POST /session/e3c08656f97248d6ee11652c5b2eb728/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/e3c08656f97248d6ee11652c5b2eb728/url - {"url":"https://the-internet.herokuapp.com/javascript_alerts"}
+RESULT: {"url":"https://the-internet.herokuapp.com/javascript_alerts"}
+COMMAND: POST /session/e3c08656f97248d6ee11652c5b2eb728/element - {"using":"xpath","value":"//button[text() = 'Click for JS Prompt']"}
+RESULT: {"using":"xpath","value":"//button[text() = 'Click for JS Prompt']"}
+COMMAND: POST /session/e3c08656f97248d6ee11652c5b2eb728/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"6e47a01b-40e1-403b-b3d2-c3fe1c0570be","ELEMENT":"6e47a01b-40e1-403b-b3d2-c3fe1c0570be"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"6e47a01b-40e1-403b-b3d2-c3fe1c0570be","ELEMENT":"6e47a01b-40e1-403b-b3d2-c3fe1c0570be"}]}
+COMMAND: POST /session/e3c08656f97248d6ee11652c5b2eb728/element/6e47a01b-40e1-403b-b3d2-c3fe1c0570be/click - {}
+RESULT: {}
+COMMAND: GET /session/e3c08656f97248d6ee11652c5b2eb728/alert/text - {}
+RESULT: {}
+COMMAND: POST /session/e3c08656f97248d6ee11652c5b2eb728/alert/text - {"text":"i am accepting a js prompt"}
+RESULT: {"text":"i am accepting a js prompt"}
+COMMAND: POST /session/e3c08656f97248d6ee11652c5b2eb728/alert/accept - {}
+RESULT: {}
+COMMAND: POST /session/e3c08656f97248d6ee11652c5b2eb728/element - {"using":"css selector","value":"#result"}
+RESULT: {"using":"css selector","value":"#result"}
+COMMAND: GET /session/e3c08656f97248d6ee11652c5b2eb728/element/4a9360d6-4d12-49a7-bd05-832141c7fde7/text - {}
+RESULT: {}
+COMMAND: DELETE /session/e3c08656f97248d6ee11652c5b2eb728 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
